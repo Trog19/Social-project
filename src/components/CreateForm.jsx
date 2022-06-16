@@ -12,17 +12,15 @@ const CreateForm = (props) => {
                 text: text
             };
             console.log(newPost)
-            props.addNewPost(newPost)
+            props.addPost(newPost)
         }
         return ( 
             <form onSubmit={event=>handleSubmit(event)}>
-                <div>
                     <label>Username</label>
                     <input type='text' value={userName} onChange={(event) => setuserName(event.target.value)}/>
                     <label>Post</label>
                     <input type='text' value={text} onChange={(event) => setText(event.target.value)}/>
                     <button type ='submit'> Create Post</button>
-                </div>
         </form>  
      );
 }

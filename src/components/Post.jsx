@@ -1,14 +1,15 @@
 import React from 'react';
-
+import "./ButtonCSS.css";
+import DislikeButton from './DislikeButton';
+import LikeButton from './LikeButton';
 
 const Post = ({post}) => {
-    console.log("This is the post" ,post)
     return ( 
             <div>
                <h1>{post.userName}</h1>
                <p>{post.text}</p>
-                <button type ='like'> Like</button> 
-                <button type='dislike'> Dislike</button>
+                <LikeButton message="Like"/>
+                <DislikeButton message="Dislike"/>
             </div>
      );
 }

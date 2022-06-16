@@ -4,6 +4,7 @@ const NavBar = (props) => {
     return ( 
         <header>
             Social Feed!
+            <button></button>
         </header>
      );
 }

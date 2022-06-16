@@ -2,10 +2,10 @@ import React from 'react';
 import Post from "./Post";
 
 
-const PostMapper = ({posts}) => {
+const PostMapper = ({post}) => {
     return ( 
         <div>
-            {posts.map((post)=><li><Post post={post}/></li>)}
+            {post.map((post)=><li><Post post={post}/></li>)}
         </div>
      );
 }

@@ -2,7 +2,7 @@ import React from 'react';
 
 const NavBar = (props) => {
     return ( 
-        <header>
+        <header className='navbar'>
             Social Feed!
             <button></button>
         </header>

@@ -2,12 +2,11 @@ import React from 'react';
 import Post from "./Post";
 
 
-const PostMapper = (props) => {
+const PostMapper = ({posts}) => {
     return ( 
-        <ul>
-            I'm the Postmapper!
-            {}
-        </ul>
+        <div>
+            {posts.map((post)=><li><Post post={post}/></li>)}
+        </div>
      );
 }
  

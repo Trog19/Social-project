@@ -10,7 +10,7 @@
     position: fixed;
     top: 0;
     text-align: center;
-    font-size: 50;
+    font-size: 100;
     font-style: bold;
     border: 1px;
     border-style: solid;
@@ -21,4 +21,22 @@
     background-color: blue;
 
 
+}
+.text-box{
+    border: 1px;
+    border-style: solid;
+    margin: 2px;
+    padding: 2px;
+    text-align: left;
+    font-size: medium;
+    font-style: times;
+    background-color: rgb(175, 171, 171);
+}
+.name-box{
+    border: 2px;
+    border-style: solid;
+    margin: 1px;
+    padding: 1px;
+    text-align: left;
+    background-color: rgb(163, 221, 54);
 }

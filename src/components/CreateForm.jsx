@@ -1,7 +1,9 @@
 import React, {useState} from "react";
 
 
+
 const CreateForm = (props) => {
+
         const [userName, setuserName] = useState("")
         const [text, setText] = useState("")
         const [date, setDate] = useState("")
@@ -18,6 +20,7 @@ const CreateForm = (props) => {
         }
         return (
             <form onSubmit={event=>handleSubmit(event)}>
+                <div className="navbar">
                     <label>Username</label>
                     <input type='text' value={userName} onChange={(event) => setuserName(event.target.value)}/>
                     <label>Post</label>
@@ -25,6 +28,7 @@ const CreateForm = (props) => {
                     <label>Date</label>
                     <input type ="date" value={date} onChange={(event) => setDate(event.target.value)}/>
                     <button type ='submit'> Create Post</button>
+                </div>
         </form>  
      );
 }
